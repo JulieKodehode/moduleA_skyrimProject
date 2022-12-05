@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="newsletter.css" />
+    <link rel="shortcut icon" href="images/skryim.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="signup.html" class="disabled">Newsletter</a>
+        <a href="media.html">Media</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Title -->
+      <heading id="title">
+        <h1>Newsletter - <span id="secret">join the Stormcloak's</span></h1>
+      </heading>
+      <!-- /Title -->
+      <form>
+        <div class="grid">
+          <!-- Personal -->
+          <fieldset>
+            <legend>Enter your personal information</legend>
+            <label for="Fname">Your name</label>
+            <input type="text" name="Fname" placeholder="Your name" />
+            <br />
+            <label for="Lname">Earshape</label>
+            <input type="text" name="earshape" placeholder="Answer carefully" />
+            <br />
+            <label for="Country">Select where you are from:</label><br />
+            <select name="City" id="">
+              <option value="Country" disabled selected>Choose a city:</option>
+              <option value="Whiterun">Whiterun</option>
+              <option value="Markarth">Markarth</option>
+              <option value="Falkreath">Falkreath</option>
+              <option value="Morthal">Morthal</option>
+              <option value="Solitude">Solitude</option>
+              <option value="Other">Other</option>
+            </select>
+          </fieldset>
+          <!-- /Personal-->
+
+          <!-- Personalized -->
+          <fieldset>
+            <legend>What are you trained in?</legend>
+            <label for="checkbox">One hand and shield</label>
+            <input type="checkbox" name="one-hand" />
+            <br />
+            <label for="checkbox">Two hand</label>
+            <input type="checkbox" name="two-hand" />
+            <br />
+            <label for="checkbox">Dual hand</label>
+            <input type="checkbox" name="dual-hand" />
+            <br />
+            <label for="checkbox">Archery</label>
+            <input type="checkbox" name="archery" />
+            <br />
+            <label for="checkbox">Destruction magic</label>
+            <input type="checkbox" name="destruction" />
+            <br />
+            <label for="checkbox">Restoration magic</label>
+            <input type="checkbox" name="restoration" />
+          </fieldset>
+          <!-- /Personalized -->
+
+          <!-- List -->
+          <fieldset>
+            <legend>What you are signing up for:</legend>
+            <ul>
+              <li>A fight for the Nords, and our right to worship Talos in our own homeland.</li>
+              <li>
+                We seek any who is willing for the cause, young or old. Trained or untrained. Any is
+                welcome against the Empire.
+              </li>
+            </ul>
+          </fieldset>
+          <!-- /List -->
+
+          <!-- Submit -->
+          <fieldset>
+            <legend>Add a comment and submit your form</legend>
+            <textarea name="comment" cols="30" rows="5" placeholder="Add a comment"></textarea>
+            <br />
+            <label for="submit">Submit</label>
+            <input class="button" type="submit" value="Submit" />
+            <label for="reset">Reset</label>
+            <input class="button" type="reset" value="Reset" />
+          </fieldset>
+          <!-- /Submit -->
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

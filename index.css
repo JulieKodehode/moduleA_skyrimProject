@@ -1,0 +1,110 @@
+/*Google font*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handlee&display=swap");
+
+/*General*/
+body {
+  margin: 0;
+  background-color: #f1ecc4;
+}
+
+/* Journal */
+#title {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+.journal {
+  display: flex;
+  flex-direction: column;
+}
+
+#entry-one,
+#entry-two,
+#entry-three {
+  background-color: #4e4345;
+  border: 4px solid #3a2f2d;
+  border-radius: 20px;
+  width: 550px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/*Typography*/
+h1 {
+  font-family: "Dancing Script", cursive;
+  padding: 10px;
+  margin: 10px;
+  color: #3a2f2d;
+}
+
+h3 {
+  font-family: "Dancing Script", cursive;
+  padding: 10px;
+  margin: 10px;
+  color: #3a2f2d;
+  background-color: #f1ecc4;
+  text-align: center;
+  border-radius: 15px;
+}
+
+p {
+  font-family: "Handlee", cursive;
+  color: #f1ecc4;
+}
+
+/*Pseudo*/
+p::first-line {
+  font-family: "Dancing Script", cursive;
+  font-size: 21px;
+}
+
+p::first-letter {
+  font-weight: 600;
+}
+
+/*Buttons
+button {
+  background-color: #607744;
+  border: 3px #111 solid;
+  padding: 5px;
+}
+
+.disabled {
+  pointer-events: none;
+  margin: 15px;
+} Not included anymore */
+
+/*Navigation bar*/
+nav {
+  height: 20px;
+  width: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #3a2f2d;
+  color: #f1ecc4;
+  word-spacing: 30px;
+}
+a {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #f1ecc4;
+}
+
+a:visited {
+  color: #f1ecc4;
+}
+
+a:hover {
+  color: #3a2f2d;
+  background-color: #f1ecc4;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
